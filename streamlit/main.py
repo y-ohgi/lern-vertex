@@ -21,11 +21,18 @@ def main():
             value=0
         )
 
+        weight = st.number_input(
+            "体重",
+            min_value=0,
+            max_value=150,
+            value=0
+        )
+
         submit_button = st.form_submit_button("評価する")
 
     if submit_button:
         if water and steps:
-            response = vertex.ask_ai(steps, water)
+            response = vertex.ask_ai(steps, water, weight)
             st.text(response.text)
         else:
             st.error("水分摂取量と歩数を入力してください")
