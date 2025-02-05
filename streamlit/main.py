@@ -8,9 +8,16 @@ def main():
 
     with st.form(key="input_form"):
         water = st.number_input(
-            "水分摂取量",
+            "水分摂取量(ml)",
             min_value=0,
             max_value=10000,
+            value=0
+        )
+
+        weight = st.number_input(
+            "体重(kg)",
+            min_value=0,
+            max_value=150,
             value=0
         )
 
@@ -18,13 +25,6 @@ def main():
             "歩数",
             min_value=0,
             max_value=100000,
-            value=0
-        )
-
-        weight = st.number_input(
-            "体重",
-            min_value=0,
-            max_value=150,
             value=0
         )
 
