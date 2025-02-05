@@ -32,21 +32,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-# # ユーザー入力の取得
-# prompt = st.text_input("Your message:")
-
-# if prompt:
-#     # ユーザー入力をセッション状態に追加
-#     st.session_state.messages.append({"role": "user", "content": prompt})
-
-#     # Gemini APIを使って応答を生成
-#     response = vertex.ask_ai(1000, 2000)
-
-#     # 応答をテキストとして取得（ここではresponse.textと仮定）
-#     assistant_response = response.text
-
-#     # 応答をセッション状態に追加し、表示
-#     st.session_state.messages.append({"role": "assistant", "content": assistant_response})
-#     st.text(f"Assistant: {assistant_response}")

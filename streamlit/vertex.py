@@ -15,6 +15,3 @@ def ask_ai(steps, water):
         contents=f'''今日の記録：歩数は${steps}歩、水分摂取量は${water}mlでした。
         今日の記録をもとに、今日の運動量を1000文字以内で逆ギレ風に評価してください。'''
     )
-
-# print(ask_ai(10000, 2000).text)
-
